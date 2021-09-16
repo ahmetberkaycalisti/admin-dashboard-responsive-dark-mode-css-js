@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="shortcut icon" href="/images/logo-mb.png" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="images/naberLogo.png" alt="">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bx bx-left-arrow-alt"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="" class="profile-image">
+                <div class="sidebar-user-name">
+                    Ahmet Berkay
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class="bx bx-log-out bx-flip-horizontal"></i>
+            </button>
+        </div>
+        <!-- Sidebar -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class="bx bx-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span>Sales</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-chart"></i>
+                    <span>Analytics</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-user-circle"></i>
+                    <span>Account</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Edit Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Account Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Billing
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-category"></i>
+                    <span>Project</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Add Project
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-category"></i>
+                    <span>E-Commerce</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            List Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Add Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Orders
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-mail-send"></i>
+                    <span>Mail</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-chat"></i>
+                    <span>Chat</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-cog"></i>
+                    <span>Settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            Dark Mode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Endsidebar Menu -->
+    </div>
+    <!-- EndSidebar -->
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </div>
+            <div class="main-title">
+                Dashboard
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <div class="counter">
+                            <div class="counter-title">
+                                Total Order
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    6578
+                                </div>
+                                <i class="bx bx-shopping-bag"></i>
+                            </div>
+                        </div>
+                        <!-- End Counter -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <div class="counter">
+                            <div class="counter-title">
+                                Conversion Rate
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    30.5%
+                                </div>
+                                <i class="bx bx-chat"></i>
+                            </div>
+                        </div>
+                        <!-- End Counter -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <div class="counter">
+                            <div class="counter-title">
+                                Total Profit
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    $9,780
+                                </div>
+                                <i class="bx bx-line-chart"></i>
+                            </div>
+                        </div>
+                        <!-- End Counter -->
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <div class="counter">
+                            <div class="counter-title">
+                                Daily Visitors
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    690
+                                </div>
+                                <i class="bx bx-user"></i>
+                            </div>
+                        </div>
+                        <!-- End Counter -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <!-- Top Product -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Top Product
+                        </div>
+                        <div class="box-body">
+                            <ul class="product-list">
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="images/thumb-7.jpg" alt="Product Image">
+                                        <div class="item-name">
+                                            <div class="product-name">Jacket</div>
+                                            <div class="product-name">Cloths</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,930</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="images/sneaker.jpg" alt="Product Image">
+                                        <div class="item-name">
+                                            <div class="product-name">Sneaker</div>
+                                            <div class="product-name">Cloths</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,930</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="images/headphone.jpg" alt="Product Image">
+                                        <div class="item-name">
+                                            <div class="product-name">Headphone</div>
+                                            <div class="product-name">Devices</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,930</div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="images/backpack.jpg" alt="Product Image">
+                                        <div class="item-name">
+                                            <div class="product-name">Backpack</div>
+                                            <div class="product-name">Bags</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Sales</div>
+                                        <div class="product-sales">$5,930</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Top Product -->
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+                    <!-- Category Chart -->
+                    <div class="box f-height">
+                        <div class="box-body">
+                            <div id="category-chart"></div>
+                        </div>
+                    </div>
+                    <!-- End Category Chart -->
+                </div>
+                <div class="col-5 col-md-12 col-sm-12">
+                    <!-- Customers Chart -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Customers
+                        </div>
+                        <div class="box-body">
+                            <div id="customer-chart"></div>
+                        </div>
+                    </div>
+                    <!-- End Customers Chart -->
+                </div>
+                <div class="col-12">
+                    <!-- Orders Table -->
+                    <div class="box">
+                        <div class="box-header">
+                            Recent Orders
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Customer </th>
+                                        <th>Date</th>
+                                        <th>Order Status</th>
+                                        <th>Payment Status</th>
+                                        <th>Total </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="https://pbs.twimg.com/profile_images/3691489229/e0b2f866e2e1449ad4303bc8a57c5168_400x400.jpeg" alt="user image">
+                                                <span>ahmetberkaycalisti</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Ready
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Pending</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="images/user-image-2.png" alt="user image">
+                                                <span>Osman Karabucak</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="images/user-image-2.png" alt="user image">
+                                                <span>Mahmut Azra Akinci</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="images/user-image-2.png" alt="user image">
+                                                <span>Recep Basibuyuk</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End Orders Table -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Content -->
+
+    <div class="overlay">
+
+    </div>
+
+    <!-- Script -->
+    <!-- Apex Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+</body>
+</html>
